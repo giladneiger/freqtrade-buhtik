@@ -18,6 +18,6 @@ time.sleep(10)
 while True:
     balance = subprocess.check_output(["/bin/bash", "data_handler.sh"]).decode("utf-8").strip()
     sendLogsToElasticSearch(balance)
-    time.sleep(30)
+    time.sleep(60)
 
 
