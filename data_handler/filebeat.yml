@@ -14,8 +14,3 @@ output:
   enabled: true  
   hosts:   
       - localhost:5044
-
-# processors:
-#   - decode_json_fields:
-#       fields: ['message']
-#       target: json
