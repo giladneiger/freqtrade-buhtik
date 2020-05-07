@@ -14,10 +14,16 @@ class ElkJsonFormatter(jsonlogger.JsonFormatter):
         log_record['@timestamp'] = datetime.now().isoformat()
         log_record['level'] = record.levelname
         log_record['logger'] = record.name
+        log_record['open_trades'] = open_trades
+        log_record['total_trades_done'] = total_trades_done
 time.sleep(10)
 while True:
-    balance = subprocess.check_output(["/bin/bash", "data_handler.sh"]).decode("utf-8").strip()
+    balance = subprocess.check_output(["/bin/bash", "/data_handler/api_commands/balance.sh"]).decode("utf-8").strip()
+    open_trades = subprocess.check_output(["/bin/bash", "/data_handler/api_commands/open_trades.sh"]).decode("utf-8").strip()
+    if open_trades == None or open_trades == "":
+        open_trades = 0
+    total_trades_done = subprocess.check_output(["/bin/bash", "/data_handler/api_commands/total_trades_done.sh"]).decode("utf-8").strip()
     sendLogsToElasticSearch(balance)
-    time.sleep(30)
+    time.sleep(1800)
 
 

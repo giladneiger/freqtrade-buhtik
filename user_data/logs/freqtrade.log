@@ -638,3 +638,579 @@
 2020-05-07 08:26:27,218 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
 2020-05-07 08:26:36,559 - werkzeug - INFO - 192.168.64.1 - - [07/May/2020 08:26:36] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
 2020-05-07 08:26:47,784 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 08:26:47] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 11:49:50,805 - freqtrade.loggers - INFO - Verbosity set to 0
+2020-05-07 11:49:50,807 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2020-05-07 11:49:50,807 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2020-05-07 11:49:50,807 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2020-05-07 11:49:50,807 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2020-05-07 11:49:50,808 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 3 ...
+2020-05-07 11:49:50,808 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2020-05-07 11:49:50,809 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2020-05-07 11:49:50,809 - freqtrade.configuration.check_exchange - INFO - Checking exchange...
+2020-05-07 11:49:50,809 - freqtrade.configuration.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2020-05-07 11:49:50,809 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2020-05-07 11:49:50,809 - freqtrade.freqtradebot - INFO - Starting freqtrade 2020.4
+2020-05-07 11:49:50,982 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy CombinedBinHAndCluc from '/freqtrade/user_data/strategies/CombinedBinHAndCluc.py'...
+2020-05-07 11:49:50,988 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'ticker_interval' with value in config file: 5m.
+2020-05-07 11:49:50,989 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: BTC.
+2020-05-07 11:49:50,989 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 0.16.
+2020-05-07 11:49:50,989 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'buy': 10, 'sell': 30}.
+2020-05-07 11:49:50,989 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'use_sell_signal' with value in config file: True.
+2020-05-07 11:49:50,989 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'sell_profit_only' with value in config file: False.
+2020-05-07 11:49:50,989 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'ignore_roi_if_buy_signal' with value in config file: False.
+2020-05-07 11:49:50,989 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.05}
+2020-05-07 11:49:50,990 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ticker_interval: 5m
+2020-05-07 11:49:50,990 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2020-05-07 11:49:50,990 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2020-05-07 11:49:50,990 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2020-05-07 11:49:50,990 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2020-05-07 11:49:50,990 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: False
+2020-05-07 11:49:50,990 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'buy': 'limit', 'sell': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2020-05-07 11:49:50,990 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'buy': 'gtc', 'sell': 'gtc'}
+2020-05-07 11:49:50,991 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: BTC
+2020-05-07 11:49:50,991 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 0.16
+2020-05-07 11:49:50,991 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 0
+2020-05-07 11:49:50,991 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'buy': 10, 'sell': 30}
+2020-05-07 11:49:50,991 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_sell_signal: True
+2020-05-07 11:49:50,991 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using sell_profit_only: False
+2020-05-07 11:49:50,991 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_buy_signal: False
+2020-05-07 11:49:50,991 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2020-05-07 11:49:50,996 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2020-05-07 11:49:50,997 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2020-05-07 11:49:51,007 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True, 'rateLimit': 200}
+2020-05-07 11:49:51,027 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2020-05-07 11:49:52,614 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2020-05-07 11:49:52,740 - freqtrade.wallets - INFO - Wallets synced.
+2020-05-07 11:49:52,760 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/pairlist/StaticPairList.py'...
+2020-05-07 11:49:52,760 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.api_server
+2020-05-07 11:49:53,103 - freqtrade.rpc.api_server - INFO - Starting HTTP Server at 0.0.0.0:8080
+2020-05-07 11:49:53,103 - freqtrade.rpc.api_server - WARNING - SECURITY WARNING - Local Rest Server listening to external connections
+2020-05-07 11:49:53,103 - freqtrade.rpc.api_server - WARNING - SECURITY WARNING - This is insecure please set to your loopback,e.g 127.0.0.1 in config.json
+2020-05-07 11:49:53,103 - freqtrade.rpc.api_server - INFO - Starting Local Rest Server.
+2020-05-07 11:49:53,105 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'running'}
+2020-05-07 11:49:53,105 - freqtrade.worker - INFO - Changing state to: RUNNING
+2020-05-07 11:49:53,106 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': warning, 'status': 'Dry run is enabled. All trades are simulated.'}
+2020-05-07 11:49:53,106 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': custom, 'status': "*Exchange:* `binance`\n*Stake per trade:* `0.16 BTC`\n*Minimum ROI:* `{'0': 0.05}`\n*Stoploss:* `-0.05`\n*Ticker Interval:* `5m`\n*Strategy:* `CombinedBinHAndCluc`"}
+2020-05-07 11:49:53,106 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': "Searching for BTC pairs to buy and sell based on [{'StaticPairList': 'StaticPairList'}]"}
+2020-05-07 11:49:55,559 - werkzeug - INFO - 192.168.112.1 - - [07/May/2020 11:49:55] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 11:49:58,112 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
+2020-05-07 11:50:16,200 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 11:50:16] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 11:50:28,020 - werkzeug - INFO - 192.168.112.1 - - [07/May/2020 11:50:28] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 11:50:47,277 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 11:50:47] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 11:50:58,156 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
+2020-05-07 11:51:00,324 - werkzeug - INFO - 192.168.112.1 - - [07/May/2020 11:51:00] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 11:51:20,345 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 11:51:20] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 11:51:32,049 - werkzeug - INFO - 192.168.112.1 - - [07/May/2020 11:51:32] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 11:51:47,692 - werkzeug - INFO - 192.168.112.1 - - [07/May/2020 11:51:47] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 11:51:51,536 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 11:51:51] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 11:51:51,868 - werkzeug - INFO - 192.168.112.1 - - [07/May/2020 11:51:51] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 11:51:58,216 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
+2020-05-07 11:52:03,696 - werkzeug - INFO - 192.168.112.1 - - [07/May/2020 11:52:03] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 11:52:22,390 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 11:52:22] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 11:52:34,557 - werkzeug - INFO - 192.168.112.1 - - [07/May/2020 11:52:34] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 11:52:52,904 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 11:52:52] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 11:52:57,780 - werkzeug - INFO - 192.168.112.1 - - [07/May/2020 11:52:57] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 11:52:58,265 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
+2020-05-07 11:53:05,404 - werkzeug - INFO - 192.168.112.1 - - [07/May/2020 11:53:05] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 11:53:23,274 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 11:53:23] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 11:53:36,759 - werkzeug - INFO - 192.168.112.1 - - [07/May/2020 11:53:36] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 11:53:52,995 - werkzeug - INFO - 192.168.112.1 - - [07/May/2020 11:53:52] "[37mGET /api/v1/daily HTTP/1.1[0m" 200 -
+2020-05-07 11:53:53,617 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 11:53:53] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 11:53:58,308 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
+2020-05-07 11:54:07,581 - werkzeug - INFO - 192.168.112.1 - - [07/May/2020 11:54:07] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 11:54:23,913 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 11:54:23] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 11:59:20,596 - freqtrade.loggers - INFO - Verbosity set to 0
+2020-05-07 11:59:20,597 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2020-05-07 11:59:20,598 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2020-05-07 11:59:20,599 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2020-05-07 11:59:20,600 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2020-05-07 11:59:20,601 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 3 ...
+2020-05-07 11:59:20,602 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2020-05-07 11:59:20,603 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2020-05-07 11:59:20,604 - freqtrade.configuration.check_exchange - INFO - Checking exchange...
+2020-05-07 11:59:20,605 - freqtrade.configuration.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2020-05-07 11:59:20,606 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2020-05-07 11:59:20,607 - freqtrade.freqtradebot - INFO - Starting freqtrade 2020.4
+2020-05-07 11:59:20,902 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy CombinedBinHAndCluc from '/freqtrade/user_data/strategies/CombinedBinHAndCluc.py'...
+2020-05-07 11:59:20,903 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'ticker_interval' with value in config file: 5m.
+2020-05-07 11:59:20,904 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: BTC.
+2020-05-07 11:59:20,904 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 0.16.
+2020-05-07 11:59:20,904 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'buy': 10, 'sell': 30}.
+2020-05-07 11:59:20,904 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'use_sell_signal' with value in config file: True.
+2020-05-07 11:59:20,904 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'sell_profit_only' with value in config file: False.
+2020-05-07 11:59:20,905 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'ignore_roi_if_buy_signal' with value in config file: False.
+2020-05-07 11:59:20,905 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.05}
+2020-05-07 11:59:20,905 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ticker_interval: 5m
+2020-05-07 11:59:20,905 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2020-05-07 11:59:20,906 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2020-05-07 11:59:20,906 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2020-05-07 11:59:20,906 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2020-05-07 11:59:20,906 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: False
+2020-05-07 11:59:20,907 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'buy': 'limit', 'sell': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2020-05-07 11:59:20,907 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'buy': 'gtc', 'sell': 'gtc'}
+2020-05-07 11:59:20,907 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: BTC
+2020-05-07 11:59:20,907 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 0.16
+2020-05-07 11:59:20,908 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 0
+2020-05-07 11:59:20,908 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'buy': 10, 'sell': 30}
+2020-05-07 11:59:20,908 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_sell_signal: True
+2020-05-07 11:59:20,908 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using sell_profit_only: False
+2020-05-07 11:59:20,908 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_buy_signal: False
+2020-05-07 11:59:20,908 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2020-05-07 11:59:20,913 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2020-05-07 11:59:20,913 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2020-05-07 11:59:20,925 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True, 'rateLimit': 200}
+2020-05-07 11:59:20,939 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2020-05-07 11:59:22,858 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2020-05-07 11:59:24,278 - freqtrade.wallets - INFO - Wallets synced.
+2020-05-07 11:59:24,372 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/pairlist/StaticPairList.py'...
+2020-05-07 11:59:24,372 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.api_server
+2020-05-07 11:59:27,913 - freqtrade.rpc.api_server - INFO - Starting HTTP Server at 0.0.0.0:8080
+2020-05-07 11:59:27,914 - freqtrade.rpc.api_server - WARNING - SECURITY WARNING - Local Rest Server listening to external connections
+2020-05-07 11:59:27,914 - freqtrade.rpc.api_server - WARNING - SECURITY WARNING - This is insecure please set to your loopback,e.g 127.0.0.1 in config.json
+2020-05-07 11:59:27,914 - freqtrade.rpc.api_server - INFO - Starting Local Rest Server.
+2020-05-07 11:59:27,920 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'running'}
+2020-05-07 11:59:27,922 - freqtrade.worker - INFO - Changing state to: RUNNING
+2020-05-07 11:59:27,928 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': warning, 'status': 'Dry run is enabled. All trades are simulated.'}
+2020-05-07 11:59:27,932 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': custom, 'status': "*Exchange:* `binance`\n*Stake per trade:* `0.16 BTC`\n*Minimum ROI:* `{'0': 0.05}`\n*Stoploss:* `-0.05`\n*Ticker Interval:* `5m`\n*Strategy:* `CombinedBinHAndCluc`"}
+2020-05-07 11:59:27,938 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': "Searching for BTC pairs to buy and sell based on [{'StaticPairList': 'StaticPairList'}]"}
+2020-05-07 11:59:32,947 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
+2020-05-07 11:59:43,981 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 11:59:43] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:00:17,605 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:00:17] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:00:32,992 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
+2020-05-07 12:02:38,682 - freqtrade.loggers - INFO - Verbosity set to 0
+2020-05-07 12:02:38,685 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2020-05-07 12:02:38,686 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2020-05-07 12:02:38,687 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2020-05-07 12:02:38,688 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2020-05-07 12:02:38,689 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 3 ...
+2020-05-07 12:02:38,691 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2020-05-07 12:02:38,692 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2020-05-07 12:02:38,693 - freqtrade.configuration.check_exchange - INFO - Checking exchange...
+2020-05-07 12:02:38,694 - freqtrade.configuration.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2020-05-07 12:02:38,694 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2020-05-07 12:02:38,694 - freqtrade.freqtradebot - INFO - Starting freqtrade 2020.4
+2020-05-07 12:02:38,962 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy CombinedBinHAndCluc from '/freqtrade/user_data/strategies/CombinedBinHAndCluc.py'...
+2020-05-07 12:02:38,963 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'ticker_interval' with value in config file: 5m.
+2020-05-07 12:02:38,963 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: BTC.
+2020-05-07 12:02:38,964 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 0.16.
+2020-05-07 12:02:38,965 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'buy': 10, 'sell': 30}.
+2020-05-07 12:02:38,965 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'use_sell_signal' with value in config file: True.
+2020-05-07 12:02:38,965 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'sell_profit_only' with value in config file: False.
+2020-05-07 12:02:38,965 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'ignore_roi_if_buy_signal' with value in config file: False.
+2020-05-07 12:02:38,965 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.05}
+2020-05-07 12:02:38,965 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ticker_interval: 5m
+2020-05-07 12:02:38,965 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2020-05-07 12:02:38,965 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2020-05-07 12:02:38,965 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2020-05-07 12:02:38,966 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2020-05-07 12:02:38,966 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: False
+2020-05-07 12:02:38,966 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'buy': 'limit', 'sell': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2020-05-07 12:02:38,966 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'buy': 'gtc', 'sell': 'gtc'}
+2020-05-07 12:02:38,966 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: BTC
+2020-05-07 12:02:38,966 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 0.16
+2020-05-07 12:02:38,966 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 0
+2020-05-07 12:02:38,966 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'buy': 10, 'sell': 30}
+2020-05-07 12:02:38,967 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_sell_signal: True
+2020-05-07 12:02:38,967 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using sell_profit_only: False
+2020-05-07 12:02:38,967 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_buy_signal: False
+2020-05-07 12:02:38,967 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2020-05-07 12:02:38,975 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2020-05-07 12:02:38,975 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2020-05-07 12:02:38,991 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True, 'rateLimit': 200}
+2020-05-07 12:02:39,010 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2020-05-07 12:02:40,398 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2020-05-07 12:02:40,523 - freqtrade.wallets - INFO - Wallets synced.
+2020-05-07 12:02:40,536 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/pairlist/StaticPairList.py'...
+2020-05-07 12:02:40,537 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.api_server
+2020-05-07 12:02:40,972 - freqtrade.rpc.api_server - INFO - Starting HTTP Server at 0.0.0.0:8080
+2020-05-07 12:02:40,973 - freqtrade.rpc.api_server - WARNING - SECURITY WARNING - Local Rest Server listening to external connections
+2020-05-07 12:02:40,973 - freqtrade.rpc.api_server - WARNING - SECURITY WARNING - This is insecure please set to your loopback,e.g 127.0.0.1 in config.json
+2020-05-07 12:02:40,973 - freqtrade.rpc.api_server - INFO - Starting Local Rest Server.
+2020-05-07 12:02:40,973 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'running'}
+2020-05-07 12:02:40,977 - freqtrade.worker - INFO - Changing state to: RUNNING
+2020-05-07 12:02:40,979 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': warning, 'status': 'Dry run is enabled. All trades are simulated.'}
+2020-05-07 12:02:40,981 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': custom, 'status': "*Exchange:* `binance`\n*Stake per trade:* `0.16 BTC`\n*Minimum ROI:* `{'0': 0.05}`\n*Stoploss:* `-0.05`\n*Ticker Interval:* `5m`\n*Strategy:* `CombinedBinHAndCluc`"}
+2020-05-07 12:02:40,986 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': "Searching for BTC pairs to buy and sell based on [{'StaticPairList': 'StaticPairList'}]"}
+2020-05-07 12:02:46,016 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
+2020-05-07 12:03:01,328 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:03:01] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:04:09,265 - freqtrade.loggers - INFO - Verbosity set to 0
+2020-05-07 12:04:09,266 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2020-05-07 12:04:09,268 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2020-05-07 12:04:09,269 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2020-05-07 12:04:09,270 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2020-05-07 12:04:09,271 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 3 ...
+2020-05-07 12:04:09,272 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2020-05-07 12:04:09,273 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2020-05-07 12:04:09,274 - freqtrade.configuration.check_exchange - INFO - Checking exchange...
+2020-05-07 12:04:09,278 - freqtrade.configuration.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2020-05-07 12:04:09,279 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2020-05-07 12:04:09,281 - freqtrade.freqtradebot - INFO - Starting freqtrade 2020.4
+2020-05-07 12:04:09,380 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy CombinedBinHAndCluc from '/freqtrade/user_data/strategies/CombinedBinHAndCluc.py'...
+2020-05-07 12:04:09,382 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'ticker_interval' with value in config file: 5m.
+2020-05-07 12:04:09,384 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: BTC.
+2020-05-07 12:04:09,385 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 0.16.
+2020-05-07 12:04:09,386 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'buy': 10, 'sell': 30}.
+2020-05-07 12:04:09,387 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'use_sell_signal' with value in config file: True.
+2020-05-07 12:04:09,387 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'sell_profit_only' with value in config file: False.
+2020-05-07 12:04:09,388 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'ignore_roi_if_buy_signal' with value in config file: False.
+2020-05-07 12:04:09,390 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.05}
+2020-05-07 12:04:09,390 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ticker_interval: 5m
+2020-05-07 12:04:09,390 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2020-05-07 12:04:09,390 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2020-05-07 12:04:09,390 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2020-05-07 12:04:09,391 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2020-05-07 12:04:09,391 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: False
+2020-05-07 12:04:09,391 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'buy': 'limit', 'sell': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2020-05-07 12:04:09,391 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'buy': 'gtc', 'sell': 'gtc'}
+2020-05-07 12:04:09,391 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: BTC
+2020-05-07 12:04:09,391 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 0.16
+2020-05-07 12:04:09,391 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 0
+2020-05-07 12:04:09,391 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'buy': 10, 'sell': 30}
+2020-05-07 12:04:09,391 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_sell_signal: True
+2020-05-07 12:04:09,392 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using sell_profit_only: False
+2020-05-07 12:04:09,392 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_buy_signal: False
+2020-05-07 12:04:09,392 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2020-05-07 12:04:09,396 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2020-05-07 12:04:09,396 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2020-05-07 12:04:09,411 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True, 'rateLimit': 200}
+2020-05-07 12:04:09,425 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2020-05-07 12:04:10,537 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2020-05-07 12:04:10,577 - freqtrade.wallets - INFO - Wallets synced.
+2020-05-07 12:04:10,584 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/pairlist/StaticPairList.py'...
+2020-05-07 12:04:10,587 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.api_server
+2020-05-07 12:04:10,726 - freqtrade.rpc.api_server - INFO - Starting HTTP Server at 0.0.0.0:8080
+2020-05-07 12:04:10,727 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'running'}
+2020-05-07 12:04:10,729 - freqtrade.worker - INFO - Changing state to: RUNNING
+2020-05-07 12:04:10,729 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': warning, 'status': 'Dry run is enabled. All trades are simulated.'}
+2020-05-07 12:04:10,729 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': custom, 'status': "*Exchange:* `binance`\n*Stake per trade:* `0.16 BTC`\n*Minimum ROI:* `{'0': 0.05}`\n*Stoploss:* `-0.05`\n*Ticker Interval:* `5m`\n*Strategy:* `CombinedBinHAndCluc`"}
+2020-05-07 12:04:10,729 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': "Searching for BTC pairs to buy and sell based on [{'StaticPairList': 'StaticPairList'}]"}
+2020-05-07 12:04:10,728 - freqtrade.rpc.api_server - WARNING - SECURITY WARNING - Local Rest Server listening to external connections
+2020-05-07 12:04:10,740 - freqtrade.rpc.api_server - WARNING - SECURITY WARNING - This is insecure please set to your loopback,e.g 127.0.0.1 in config.json
+2020-05-07 12:04:10,742 - freqtrade.rpc.api_server - INFO - Starting Local Rest Server.
+2020-05-07 12:04:15,740 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
+2020-05-07 12:04:17,898 - werkzeug - INFO - 192.168.128.1 - - [07/May/2020 12:04:17] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:04:37,577 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:04:37] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:04:51,190 - werkzeug - INFO - 192.168.128.1 - - [07/May/2020 12:04:51] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:05:08,692 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:05:08] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:05:15,784 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
+2020-05-07 12:05:22,699 - werkzeug - INFO - 192.168.128.1 - - [07/May/2020 12:05:22] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:05:39,901 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:05:39] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:08:41,233 - freqtrade.loggers - INFO - Verbosity set to 0
+2020-05-07 12:08:41,233 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2020-05-07 12:08:41,233 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2020-05-07 12:08:41,233 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2020-05-07 12:08:41,233 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2020-05-07 12:08:41,233 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 3 ...
+2020-05-07 12:08:41,234 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2020-05-07 12:08:41,234 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2020-05-07 12:08:41,234 - freqtrade.configuration.check_exchange - INFO - Checking exchange...
+2020-05-07 12:08:41,235 - freqtrade.configuration.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2020-05-07 12:08:41,235 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2020-05-07 12:08:41,235 - freqtrade.freqtradebot - INFO - Starting freqtrade 2020.4
+2020-05-07 12:08:41,384 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy CombinedBinHAndCluc from '/freqtrade/user_data/strategies/CombinedBinHAndCluc.py'...
+2020-05-07 12:08:41,386 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'ticker_interval' with value in config file: 5m.
+2020-05-07 12:08:41,388 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: BTC.
+2020-05-07 12:08:41,390 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 0.16.
+2020-05-07 12:08:41,391 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'buy': 10, 'sell': 30}.
+2020-05-07 12:08:41,394 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'use_sell_signal' with value in config file: True.
+2020-05-07 12:08:41,394 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'sell_profit_only' with value in config file: False.
+2020-05-07 12:08:41,405 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'ignore_roi_if_buy_signal' with value in config file: False.
+2020-05-07 12:08:41,408 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.05}
+2020-05-07 12:08:41,410 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ticker_interval: 5m
+2020-05-07 12:08:41,411 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2020-05-07 12:08:41,413 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2020-05-07 12:08:41,414 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2020-05-07 12:08:41,416 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2020-05-07 12:08:41,421 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: False
+2020-05-07 12:08:41,422 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'buy': 'limit', 'sell': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2020-05-07 12:08:41,427 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'buy': 'gtc', 'sell': 'gtc'}
+2020-05-07 12:08:41,428 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: BTC
+2020-05-07 12:08:41,432 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 0.16
+2020-05-07 12:08:41,433 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 0
+2020-05-07 12:08:41,433 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'buy': 10, 'sell': 30}
+2020-05-07 12:08:41,433 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_sell_signal: True
+2020-05-07 12:08:41,434 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using sell_profit_only: False
+2020-05-07 12:08:41,435 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_buy_signal: False
+2020-05-07 12:08:41,437 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2020-05-07 12:08:41,447 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2020-05-07 12:08:41,451 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2020-05-07 12:08:41,466 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True, 'rateLimit': 200}
+2020-05-07 12:08:41,484 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2020-05-07 12:08:42,664 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2020-05-07 12:08:42,738 - freqtrade.wallets - INFO - Wallets synced.
+2020-05-07 12:08:42,761 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/pairlist/StaticPairList.py'...
+2020-05-07 12:08:42,762 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.api_server
+2020-05-07 12:08:43,353 - freqtrade.rpc.api_server - INFO - Starting HTTP Server at 0.0.0.0:8080
+2020-05-07 12:08:43,353 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'running'}
+2020-05-07 12:08:43,354 - freqtrade.rpc.api_server - WARNING - SECURITY WARNING - Local Rest Server listening to external connections
+2020-05-07 12:08:43,354 - freqtrade.worker - INFO - Changing state to: RUNNING
+2020-05-07 12:08:43,356 - freqtrade.rpc.api_server - WARNING - SECURITY WARNING - This is insecure please set to your loopback,e.g 127.0.0.1 in config.json
+2020-05-07 12:08:43,357 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': warning, 'status': 'Dry run is enabled. All trades are simulated.'}
+2020-05-07 12:08:43,359 - freqtrade.rpc.api_server - INFO - Starting Local Rest Server.
+2020-05-07 12:08:43,360 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': custom, 'status': "*Exchange:* `binance`\n*Stake per trade:* `0.16 BTC`\n*Minimum ROI:* `{'0': 0.05}`\n*Stoploss:* `-0.05`\n*Ticker Interval:* `5m`\n*Strategy:* `CombinedBinHAndCluc`"}
+2020-05-07 12:08:43,364 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': "Searching for BTC pairs to buy and sell based on [{'StaticPairList': 'StaticPairList'}]"}
+2020-05-07 12:08:48,372 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
+2020-05-07 12:08:54,648 - werkzeug - INFO - 192.168.144.1 - - [07/May/2020 12:08:54] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:08:54,800 - werkzeug - INFO - 192.168.144.1 - - [07/May/2020 12:08:54] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:08:54,951 - werkzeug - INFO - 192.168.144.1 - - [07/May/2020 12:08:54] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:09:05,778 - freqtrade.loggers - INFO - Verbosity set to 0
+2020-05-07 12:09:05,778 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2020-05-07 12:09:05,779 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2020-05-07 12:09:05,779 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2020-05-07 12:09:05,779 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2020-05-07 12:09:05,779 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 3 ...
+2020-05-07 12:09:05,779 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2020-05-07 12:09:05,780 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2020-05-07 12:09:05,780 - freqtrade.configuration.check_exchange - INFO - Checking exchange...
+2020-05-07 12:09:05,780 - freqtrade.configuration.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2020-05-07 12:09:05,780 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2020-05-07 12:09:05,780 - freqtrade.freqtradebot - INFO - Starting freqtrade 2020.4
+2020-05-07 12:09:05,868 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy CombinedBinHAndCluc from '/freqtrade/user_data/strategies/CombinedBinHAndCluc.py'...
+2020-05-07 12:09:05,868 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'ticker_interval' with value in config file: 5m.
+2020-05-07 12:09:05,868 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: BTC.
+2020-05-07 12:09:05,868 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 0.16.
+2020-05-07 12:09:05,869 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'buy': 10, 'sell': 30}.
+2020-05-07 12:09:05,869 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'use_sell_signal' with value in config file: True.
+2020-05-07 12:09:05,869 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'sell_profit_only' with value in config file: False.
+2020-05-07 12:09:05,869 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'ignore_roi_if_buy_signal' with value in config file: False.
+2020-05-07 12:09:05,869 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.05}
+2020-05-07 12:09:05,869 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ticker_interval: 5m
+2020-05-07 12:09:05,869 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2020-05-07 12:09:05,869 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2020-05-07 12:09:05,869 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2020-05-07 12:09:05,869 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2020-05-07 12:09:05,870 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: False
+2020-05-07 12:09:05,870 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'buy': 'limit', 'sell': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2020-05-07 12:09:05,870 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'buy': 'gtc', 'sell': 'gtc'}
+2020-05-07 12:09:05,870 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: BTC
+2020-05-07 12:09:05,870 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 0.16
+2020-05-07 12:09:05,870 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 0
+2020-05-07 12:09:05,870 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'buy': 10, 'sell': 30}
+2020-05-07 12:09:05,870 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_sell_signal: True
+2020-05-07 12:09:05,870 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using sell_profit_only: False
+2020-05-07 12:09:05,871 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_buy_signal: False
+2020-05-07 12:09:05,871 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2020-05-07 12:09:05,875 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2020-05-07 12:09:05,875 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2020-05-07 12:09:05,883 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True, 'rateLimit': 200}
+2020-05-07 12:09:05,890 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2020-05-07 12:09:07,282 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2020-05-07 12:09:07,337 - freqtrade.wallets - INFO - Wallets synced.
+2020-05-07 12:09:07,348 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/pairlist/StaticPairList.py'...
+2020-05-07 12:09:07,350 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.api_server
+2020-05-07 12:09:07,505 - freqtrade.rpc.api_server - INFO - Starting HTTP Server at 0.0.0.0:8080
+2020-05-07 12:09:07,505 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'running'}
+2020-05-07 12:09:07,505 - freqtrade.rpc.api_server - WARNING - SECURITY WARNING - Local Rest Server listening to external connections
+2020-05-07 12:09:07,508 - freqtrade.worker - INFO - Changing state to: RUNNING
+2020-05-07 12:09:07,508 - freqtrade.rpc.api_server - WARNING - SECURITY WARNING - This is insecure please set to your loopback,e.g 127.0.0.1 in config.json
+2020-05-07 12:09:07,511 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': warning, 'status': 'Dry run is enabled. All trades are simulated.'}
+2020-05-07 12:09:07,512 - freqtrade.rpc.api_server - INFO - Starting Local Rest Server.
+2020-05-07 12:09:07,515 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': custom, 'status': "*Exchange:* `binance`\n*Stake per trade:* `0.16 BTC`\n*Minimum ROI:* `{'0': 0.05}`\n*Stoploss:* `-0.05`\n*Ticker Interval:* `5m`\n*Strategy:* `CombinedBinHAndCluc`"}
+2020-05-07 12:09:07,521 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': "Searching for BTC pairs to buy and sell based on [{'StaticPairList': 'StaticPairList'}]"}
+2020-05-07 12:09:12,532 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
+2020-05-07 12:09:12,832 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:09:12] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:09:13,214 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:09:13] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:09:13,568 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:09:13] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:09:34,357 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:09:34] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:09:45,504 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:09:45] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:09:45,861 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:09:45] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:09:46,225 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:09:46] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:10:05,359 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:10:05] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:10:12,764 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
+2020-05-07 12:10:20,942 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:10:20] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:10:21,153 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:10:21] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:10:21,391 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:10:21] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:10:36,914 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:10:36] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:10:52,035 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:10:52] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:10:52,198 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:10:52] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:10:52,361 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:10:52] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:11:08,120 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:11:08] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:11:12,831 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
+2020-05-07 12:11:22,958 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:11:22] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:11:23,164 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:11:23] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:11:23,327 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:11:23] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:11:38,529 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:11:38] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:11:53,944 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:11:53] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:11:54,108 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:11:54] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:11:54,272 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:11:54] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:12:08,811 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:12:08] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:12:12,886 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
+2020-05-07 12:12:24,826 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:12:24] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:12:24,987 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:12:24] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:12:25,150 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:12:25] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:12:39,084 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:12:39] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:12:56,338 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:12:56] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:12:56,518 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:12:56] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:12:56,679 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:12:56] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:13:09,366 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:13:09] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:13:12,935 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
+2020-05-07 12:13:27,278 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:13:27] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:13:27,440 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:13:27] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:13:27,602 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:13:27] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:13:39,694 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:13:39] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:13:58,207 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:13:58] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:13:58,367 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:13:58] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:13:58,529 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:13:58] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:14:09,953 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:14:09] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:14:12,984 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
+2020-05-07 12:14:29,334 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:14:29] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:14:29,499 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:14:29] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:14:29,664 - werkzeug - INFO - 192.168.160.1 - - [07/May/2020 12:14:29] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:21:07,575 - freqtrade.loggers - INFO - Verbosity set to 0
+2020-05-07 12:21:07,576 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2020-05-07 12:21:07,577 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2020-05-07 12:21:07,577 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2020-05-07 12:21:07,578 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2020-05-07 12:21:07,578 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 3 ...
+2020-05-07 12:21:07,580 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2020-05-07 12:21:07,582 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/binance ...
+2020-05-07 12:21:07,583 - freqtrade.configuration.check_exchange - INFO - Checking exchange...
+2020-05-07 12:21:07,584 - freqtrade.configuration.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2020-05-07 12:21:07,585 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2020-05-07 12:21:07,585 - freqtrade.freqtradebot - INFO - Starting freqtrade 2020.4
+2020-05-07 12:21:07,903 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy CombinedBinHAndCluc from '/freqtrade/user_data/strategies/CombinedBinHAndCluc.py'...
+2020-05-07 12:21:07,903 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'ticker_interval' with value in config file: 5m.
+2020-05-07 12:21:07,903 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: BTC.
+2020-05-07 12:21:07,903 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 0.16.
+2020-05-07 12:21:07,904 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'buy': 10, 'sell': 30}.
+2020-05-07 12:21:07,904 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'use_sell_signal' with value in config file: True.
+2020-05-07 12:21:07,904 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'sell_profit_only' with value in config file: False.
+2020-05-07 12:21:07,904 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'ignore_roi_if_buy_signal' with value in config file: False.
+2020-05-07 12:21:07,904 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'0': 0.05}
+2020-05-07 12:21:07,904 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ticker_interval: 5m
+2020-05-07 12:21:07,904 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.05
+2020-05-07 12:21:07,904 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2020-05-07 12:21:07,904 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2020-05-07 12:21:07,904 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2020-05-07 12:21:07,905 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: False
+2020-05-07 12:21:07,905 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'buy': 'limit', 'sell': 'limit', 'stoploss': 'limit', 'stoploss_on_exchange': False, 'stoploss_on_exchange_interval': 60}
+2020-05-07 12:21:07,905 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'buy': 'gtc', 'sell': 'gtc'}
+2020-05-07 12:21:07,905 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: BTC
+2020-05-07 12:21:07,905 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 0.16
+2020-05-07 12:21:07,905 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 0
+2020-05-07 12:21:07,905 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'buy': 10, 'sell': 30}
+2020-05-07 12:21:07,905 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_sell_signal: True
+2020-05-07 12:21:07,905 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using sell_profit_only: False
+2020-05-07 12:21:07,905 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_buy_signal: False
+2020-05-07 12:21:07,906 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2020-05-07 12:21:07,909 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2020-05-07 12:21:07,909 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2020-05-07 12:21:07,916 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True, 'rateLimit': 200}
+2020-05-07 12:21:07,922 - freqtrade.exchange.exchange - INFO - Using Exchange "Binance"
+2020-05-07 12:21:09,127 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Binance'...
+2020-05-07 12:21:09,402 - freqtrade.wallets - INFO - Wallets synced.
+2020-05-07 12:21:09,484 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/pairlist/StaticPairList.py'...
+2020-05-07 12:21:09,485 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.api_server
+2020-05-07 12:21:10,524 - freqtrade.rpc.api_server - INFO - Starting HTTP Server at 0.0.0.0:8080
+2020-05-07 12:21:10,525 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'running'}
+2020-05-07 12:21:10,525 - freqtrade.rpc.api_server - WARNING - SECURITY WARNING - Local Rest Server listening to external connections
+2020-05-07 12:21:10,525 - freqtrade.worker - INFO - Changing state to: RUNNING
+2020-05-07 12:21:10,527 - freqtrade.rpc.api_server - WARNING - SECURITY WARNING - This is insecure please set to your loopback,e.g 127.0.0.1 in config.json
+2020-05-07 12:21:10,527 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': warning, 'status': 'Dry run is enabled. All trades are simulated.'}
+2020-05-07 12:21:10,528 - freqtrade.rpc.api_server - INFO - Starting Local Rest Server.
+2020-05-07 12:21:10,528 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': custom, 'status': "*Exchange:* `binance`\n*Stake per trade:* `0.16 BTC`\n*Minimum ROI:* `{'0': 0.05}`\n*Stoploss:* `-0.05`\n*Ticker Interval:* `5m`\n*Strategy:* `CombinedBinHAndCluc`"}
+2020-05-07 12:21:10,530 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': "Searching for BTC pairs to buy and sell based on [{'StaticPairList': 'StaticPairList'}]"}
+2020-05-07 12:21:12,981 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:21:12] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:21:13,663 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:21:13] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:21:14,050 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:21:14] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:21:15,536 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
+2020-05-07 12:21:36,273 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:21:36] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:21:45,977 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:21:45] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:21:46,314 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:21:46] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:21:46,646 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:21:46] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:22:07,679 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:22:07] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:22:15,592 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
+2020-05-07 12:22:18,756 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:22:18] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:22:19,067 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:22:19] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:22:19,250 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:22:19] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:22:39,572 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:22:39] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:22:50,484 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:22:50] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:22:50,659 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:22:50] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:22:50,836 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:22:50] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:23:11,189 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:23:11] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:23:15,650 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
+2020-05-07 12:23:21,660 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:23:21] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:23:21,836 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:23:21] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:23:21,989 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:23:21] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:23:41,748 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:23:41] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:23:52,840 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:23:52] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:23:52,996 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:23:52] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:23:53,149 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:23:53] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:24:12,036 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:24:12] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:24:15,705 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
+2020-05-07 12:24:23,708 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:24:23] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:24:23,883 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:24:23] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:24:24,041 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:24:24] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:24:42,321 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:24:42] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:24:55,142 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:24:55] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:24:55,300 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:24:55] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:24:55,454 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:24:55] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:25:12,618 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:25:12] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:25:15,749 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
+2020-05-07 12:25:26,041 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:25:26] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:25:26,196 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:25:26] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:25:26,352 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:25:26] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:25:42,929 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:25:42] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:25:56,993 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:25:56] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:25:57,169 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:25:57] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:25:57,361 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:25:57] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:26:13,279 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:26:13] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:26:15,796 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
+2020-05-07 12:26:28,451 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:26:28] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:26:28,608 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:26:28] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:26:28,766 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:26:28] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:26:43,738 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:26:43] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:27:00,253 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:27:00] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:27:00,451 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:27:00] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:27:00,701 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:27:00] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:27:14,593 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:27:14] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:27:15,845 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
+2020-05-07 12:27:31,846 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:27:31] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:27:32,001 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:27:32] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:27:32,154 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:27:32] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:27:45,021 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:27:45] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:28:03,257 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:28:03] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:28:03,418 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:28:03] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:28:03,573 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:28:03] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:28:15,369 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:28:15] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:28:15,892 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
+2020-05-07 12:28:34,207 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:28:34] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:28:34,377 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:28:34] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:28:34,539 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:28:34] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:28:45,632 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:28:45] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:29:05,342 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:29:05] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:29:05,501 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:29:05] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:29:05,661 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:29:05] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:29:15,940 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
+2020-05-07 12:29:15,968 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:29:15] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:29:36,228 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:29:36] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:29:36,384 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:29:36] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:29:36,537 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:29:36] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:29:46,314 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:29:46] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:30:07,146 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:30:07] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:30:07,323 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:30:07] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:30:07,505 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:30:07] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:30:15,984 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
+2020-05-07 12:30:16,632 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:30:16] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:30:38,099 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:30:38] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:30:38,256 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:30:38] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:30:38,418 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:30:38] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:30:46,956 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:30:46] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:31:09,227 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:31:09] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:31:09,442 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:31:09] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:31:09,652 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:31:09] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:31:16,032 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
+2020-05-07 12:31:17,309 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:31:17] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:31:40,517 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:31:40] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:31:40,673 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:31:40] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:31:40,829 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:31:40] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:31:47,594 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:31:47] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:32:11,396 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:32:11] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:32:11,555 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:32:11] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:32:11,710 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:32:11] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:32:16,082 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2020.4', state='RUNNING'
+2020-05-07 12:32:17,875 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:32:17] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-07 12:32:43,347 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:32:43] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-07 12:32:43,512 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:32:43] "[37mGET /api/v1/status HTTP/1.1[0m" 200 -
+2020-05-07 12:32:43,668 - werkzeug - INFO - 192.168.192.1 - - [07/May/2020 12:32:43] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-07 12:32:48,177 - werkzeug - INFO - 127.0.0.1 - - [07/May/2020 12:32:48] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
