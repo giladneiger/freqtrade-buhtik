@@ -1,0 +1,21 @@
+filebeat.inputs:
+
+- type: log
+  enabled: true
+  paths:
+    - /data_handler/*.log
+  json:
+    keys_under_root: true
+    overwrite_keys: true
+    message_key: 'message'
+
+output:
+ logstash:  
+  enabled: true  
+  hosts:   
+      - localhost:5044
+
+# processors:
+#   - decode_json_fields:
+#       fields: ['message']
+#       target: json

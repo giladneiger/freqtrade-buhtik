@@ -1,0 +1,3 @@
+python-rapidjson
+requests
+python-json-logger
