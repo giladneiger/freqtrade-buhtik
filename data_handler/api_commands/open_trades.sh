@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 rest_client.py status | sed "s/'/\"/g" | jq .[] 
+python3 rest_client.py count | sed "s/'/\"/g" | jq .current
