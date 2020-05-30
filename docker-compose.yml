@@ -2,7 +2,11 @@
 version: '3'
 services:
   freqtrade:
-    image: freqtradeorg/freqtrade:master
+    build:
+      context: freqtrade
+      args:
+        BINANCE_API_KEY: ${BINANCE_API_KEY}
+        BINANCE_API_SECRET_KEY: ${BINANCE_API_SECRET_KEY}
     # image: freqtradeorg/freqtrade:develop
     # Build step - only needed when additional dependencies are needed
     # build:
@@ -13,13 +17,13 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - "./user_data:/freqtrade/user_data"
+      - "./freqtrade/user_data:/freqtrade/user_data"
     # Default command used when running `docker compose up`
     command: >
       trade
       --logfile /freqtrade/user_data/logs/freqtrade.log
       --db-url sqlite:////freqtrade/user_data/tradesv3.sqlite
-      --config /freqtrade/user_data/config.json
+      --config /tmp/config.json
       --dry-run 
       --strategy BbandRsi 
     healthcheck:
@@ -33,30 +37,30 @@ services:
     build: data_handler
     network_mode: host
     restart: always
-  logstash:
-    build: logstash
-    ports:
-      - "5044:5044"
-      - "9600:9600"
-    networks:
-      - freqtrade_net
-  kibana:
-    image: kibana:7.6.2
-    ports:
-      - "5601:5601"
-    environment:
-      SERVER_NAME: localhost
-      ELASTICSEARCH_URL: http://localhost:9200/
-    networks:
-      - freqtrade_net
-  elasticsearch:
-    image: elasticsearch:7.6.2
-    ports:
-      - "9200:9200"
-      - "9300:9300"
-    environment:
-      discovery.type: single-node
-    networks:
-      - freqtrade_net
+  # logstash:
+  #   build: logstash
+  #   ports:
+  #     - "5044:5044"
+  #     - "9600:9600"
+  #   networks:
+  #     - freqtrade_net
+  # kibana:
+  #   image: kibana:7.6.2
+  #   ports:
+  #     - "5601:5601"
+  #   environment:
+  #     SERVER_NAME: localhost
+  #     ELASTICSEARCH_URL: http://localhost:9200/
+  #   networks:
+  #     - freqtrade_net
+  # elasticsearch:
+  #   image: elasticsearch:7.6.2
+  #   ports:
+  #     - "9200:9200"
+  #     - "9300:9300"
+  #   environment:
+  #     discovery.type: single-node
+  #   networks:
+  #     - freqtrade_net
 networks:
   freqtrade_net:
