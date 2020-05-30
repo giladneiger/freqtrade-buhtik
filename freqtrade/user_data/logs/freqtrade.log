@@ -1467,3 +1467,4 @@ asyncio.exceptions.TimeoutError
 2020-05-30 18:55:57,512 - werkzeug - INFO - 172.19.0.1 - - [30/May/2020 18:55:57] "[37mGET /api/v1/profit HTTP/1.1[0m" 200 -
 2020-05-30 18:55:57,666 - freqtrade.rpc.api_server - INFO - LocalRPC - Profit Command Called
 2020-05-30 18:55:57,670 - werkzeug - INFO - 172.19.0.1 - - [30/May/2020 18:55:57] "[37mGET /api/v1/profit HTTP/1.1[0m" 200 -
+2020-05-30 18:56:13,995 - werkzeug - INFO - 127.0.0.1 - - [30/May/2020 18:56:13] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
