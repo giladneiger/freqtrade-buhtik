@@ -1455,3 +1455,15 @@ asyncio.exceptions.TimeoutError
 2020-05-30 18:54:55,620 - freqtrade.rpc.api_server - INFO - LocalRPC - Profit Command Called
 2020-05-30 18:54:55,624 - werkzeug - INFO - 172.19.0.1 - - [30/May/2020 18:54:55] "[37mGET /api/v1/profit HTTP/1.1[0m" 200 -
 2020-05-30 18:55:13,465 - werkzeug - INFO - 127.0.0.1 - - [30/May/2020 18:55:13] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-30 18:55:43,720 - werkzeug - INFO - 127.0.0.1 - - [30/May/2020 18:55:43] "[37mGET /api/v1/ping HTTP/1.1[0m" 200 -
+2020-05-30 18:55:51,033 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='develop', state='RUNNING'
+2020-05-30 18:55:56,805 - werkzeug - INFO - 172.19.0.1 - - [30/May/2020 18:55:56] "[37mGET /api/v1/balance HTTP/1.1[0m" 200 -
+2020-05-30 18:55:56,979 - werkzeug - INFO - 172.19.0.1 - - [30/May/2020 18:55:56] "[37mGET /api/v1/count HTTP/1.1[0m" 200 -
+2020-05-30 18:55:57,180 - freqtrade.rpc.api_server - INFO - LocalRPC - Profit Command Called
+2020-05-30 18:55:57,186 - werkzeug - INFO - 172.19.0.1 - - [30/May/2020 18:55:57] "[37mGET /api/v1/profit HTTP/1.1[0m" 200 -
+2020-05-30 18:55:57,342 - freqtrade.rpc.api_server - INFO - LocalRPC - Profit Command Called
+2020-05-30 18:55:57,346 - werkzeug - INFO - 172.19.0.1 - - [30/May/2020 18:55:57] "[37mGET /api/v1/profit HTTP/1.1[0m" 200 -
+2020-05-30 18:55:57,508 - freqtrade.rpc.api_server - INFO - LocalRPC - Profit Command Called
+2020-05-30 18:55:57,512 - werkzeug - INFO - 172.19.0.1 - - [30/May/2020 18:55:57] "[37mGET /api/v1/profit HTTP/1.1[0m" 200 -
+2020-05-30 18:55:57,666 - freqtrade.rpc.api_server - INFO - LocalRPC - Profit Command Called
+2020-05-30 18:55:57,670 - werkzeug - INFO - 172.19.0.1 - - [30/May/2020 18:55:57] "[37mGET /api/v1/profit HTTP/1.1[0m" 200 -
