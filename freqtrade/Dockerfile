@@ -24,10 +24,10 @@ RUN pip install numpy --no-cache-dir \
 # Install and execute
 COPY . /freqtrade/
 RUN pip install -e . --no-cache-dir
-COPY config.json entrypoint.sh /tmp/
-RUN echo ${BINANCE_API_KEY}
+COPY config.json /tmp/
 RUN sed -i "s|BINANCE_API_KEY|${BINANCE_API_KEY}|g" /tmp/config.json
 RUN sed -i "s|BINANCE_API_SECRET_KEY|${BINANCE_API_SECRET_KEY}|g" /tmp/config.json
+RUN sed -i "s|FREQ_API_PWD|${FREQ_API_PWD}|g" /tmp/config.json
 ENTRYPOINT ["freqtrade"]
 # Default to trade mode
 CMD [ "trade" ]

@@ -3,7 +3,7 @@
         "enabled": true,
         "listen_ip_address": "0.0.0.0",
         "listen_port": 8080,
-        "username": "Freqtrader",
-        "password": "SuperSecret1!"
+        "username": "gilad-freqtrader",
+        "password": "FREQ_API_PWD"
     }
 }

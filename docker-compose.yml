@@ -7,6 +7,7 @@ services:
       args:
         BINANCE_API_KEY: ${BINANCE_API_KEY}
         BINANCE_API_SECRET_KEY: ${BINANCE_API_SECRET_KEY}
+        FREQ_API_PWD: ${FREQ_API_PWD}
     # image: freqtradeorg/freqtrade:develop
     # Build step - only needed when additional dependencies are needed
     # build:
@@ -34,7 +35,10 @@ services:
     networks:
       - freqtrade_net
   data_handler:
-    build: data_handler
+    build: 
+      context: data_handler
+      args:
+        FREQ_API_PWD: ${FREQ_API_PWD}
     network_mode: host
     restart: always
   # logstash:
