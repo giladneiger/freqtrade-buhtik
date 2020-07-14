@@ -8,11 +8,6 @@ services:
         BINANCE_API_KEY: ${BINANCE_API_KEY}
         BINANCE_API_SECRET_KEY: ${BINANCE_API_SECRET_KEY}
         FREQ_API_PWD: ${FREQ_API_PWD}
-    # image: freqtradeorg/freqtrade:develop
-    # Build step - only needed when additional dependencies are needed
-    # build:
-    #   context: .
-    #   dockerfile: "./Dockerfile.technical"
     restart: unless-stopped
     container_name: freqtrade
     ports:
@@ -54,6 +49,9 @@ services:
     environment:
       SERVER_NAME: localhost
       ELASTICSEARCH_URL: http://localhost:9200/
+      XPACK_MONITORING_COLLECTION_ENABLED: "true"
+      ELASTICSEARCH_USERNAME: "elastic"
+      ELASTICSEARCH_PASSWORD: ${ELASTIC_PASSWORD}
     networks:
       - freqtrade_net
   elasticsearch:
@@ -63,6 +61,9 @@ services:
       - "9300:9300"
     environment:
       discovery.type: single-node
+      xpack.security.enabled: "true"
+      ELASTIC_PASSWORD: ${ELASTIC_PASSWORD}
+      xpack.license.self_generated.type: "trial"
     networks:
       - freqtrade_net
 networks:

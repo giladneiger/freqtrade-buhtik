@@ -1,1 +1,2 @@
 .env
+freqtrade/user_data/data/*
