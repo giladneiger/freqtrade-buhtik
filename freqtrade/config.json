@@ -39,11 +39,9 @@
             "rateLimit": 200
         },
         "pair_whitelist": [
-            "BCH/BTC",
             "EOS/BTC",
             "ETH/BTC",
             "LINK/BTC",
-            "LTC/BTC",
             "NEO/BTC",
             "XRP/BTC",
             "XTZ/BTC",

@@ -1,5 +1,5 @@
 ---
-version: '3'
+version: '3.3'
 services:
   freqtrade:
     build:
@@ -36,10 +36,19 @@ services:
     network_mode: host
     restart: always
   logstash:
-    build: logstash
+    build: 
+      context: logstash
+      args:
+        ELASTIC_PASSWORD: ${ELASTIC_PASSWORD}
     ports:
       - "5044:5044"
       - "9600:9600"
+    environment:
+      xpack.monitoring.enabled: "true"
+      xpack.monitoring.collection.enabled: "true"
+      xpack.security.enabled: "true"
+      xpack.monitoring.elasticsearch.username: "logstash_system"
+      xpack.monitoring.elasticsearch.password: ${ELASTIC_PASSWORD}
     networks:
       - freqtrade_net
   kibana:
