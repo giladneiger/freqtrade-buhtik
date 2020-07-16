@@ -1,26 +1,25 @@
 ---
-version: '3'
+version: '3.3'
 services:
   freqtrade:
-    image: freqtradeorg/freqtrade:master
-    # image: freqtradeorg/freqtrade:develop
-    # Build step - only needed when additional dependencies are needed
-    # build:
-    #   context: .
-    #   dockerfile: "./Dockerfile.technical"
+    build:
+      context: freqtrade
+      args:
+        BINANCE_API_KEY: ${BINANCE_API_KEY}
+        BINANCE_API_SECRET_KEY: ${BINANCE_API_SECRET_KEY}
+        FREQ_API_PWD: ${FREQ_API_PWD}
     restart: unless-stopped
     container_name: freqtrade
     ports:
       - "8080:8080"
     volumes:
-      - "./user_data:/freqtrade/user_data"
+      - "./freqtrade/user_data:/freqtrade/user_data"
     # Default command used when running `docker compose up`
     command: >
       trade
       --logfile /freqtrade/user_data/logs/freqtrade.log
       --db-url sqlite:////freqtrade/user_data/tradesv3.sqlite
-      --config /freqtrade/user_data/config.json
-      --dry-run 
+      --config /tmp/config.json
       --strategy BbandRsi 
     healthcheck:
       test: "${DOCKER_HEALTHCHECK_TEST:-curl localhost:8080/api/v1/ping}"
@@ -30,14 +29,26 @@ services:
     networks:
       - freqtrade_net
   data_handler:
-    build: data_handler
+    build: 
+      context: data_handler
+      args:
+        FREQ_API_PWD: ${FREQ_API_PWD}
     network_mode: host
     restart: always
   logstash:
-    build: logstash
+    build: 
+      context: logstash
+      args:
+        ELASTIC_PASSWORD: ${ELASTIC_PASSWORD}
     ports:
       - "5044:5044"
       - "9600:9600"
+    environment:
+      xpack.monitoring.enabled: "true"
+      xpack.monitoring.collection.enabled: "true"
+      xpack.security.enabled: "true"
+      xpack.monitoring.elasticsearch.username: "logstash_system"
+      xpack.monitoring.elasticsearch.password: ${ELASTIC_PASSWORD}
     networks:
       - freqtrade_net
   kibana:
@@ -47,6 +58,9 @@ services:
     environment:
       SERVER_NAME: localhost
       ELASTICSEARCH_URL: http://localhost:9200/
+      XPACK_MONITORING_COLLECTION_ENABLED: "true"
+      ELASTICSEARCH_USERNAME: "elastic"
+      ELASTICSEARCH_PASSWORD: ${ELASTIC_PASSWORD}
     networks:
       - freqtrade_net
   elasticsearch:
@@ -56,6 +70,9 @@ services:
       - "9300:9300"
     environment:
       discovery.type: single-node
+      xpack.security.enabled: "true"
+      ELASTIC_PASSWORD: ${ELASTIC_PASSWORD}
+      xpack.license.self_generated.type: "trial"
     networks:
       - freqtrade_net
 networks:
