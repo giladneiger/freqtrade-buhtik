@@ -26,14 +26,20 @@ The data collected from the freqtrade API and delivered to Elasticsearch & Kiban
 ## Credentials
 In order to allow full control for the bot & the ELK (Elasticsearch, Logstash, Kibana) services,you should inject the credentials to the containers. The best way to do so is to create a credentials file called .env (include it in .gitignore) so git won't save it. Set the following environment variables inside this file:
 
-* BINANCE_API_KEY
-* BINANCE_API_SECRET_KEY
-* FREQ_API_PWD
-* ELASTIC_PASSWORD
-* TELEGRAM_TOKEN
-* TELEGRAM_CHAT_ID
+Credential | Detail
+--- | ---
+BINANCE_API_KEY | The API key of your Binance account
+BINANCE_API_SECRET_KEY | The API secret key of your Binance account
+FREQ_API_PWD | The freqtrade API password to use (you set it by this variable)
+ELASTIC_PASSWORD | The password for your elastic user to use (login credential for Kibana)
+TELEGRAM_TOKEN | The token of your telegram bot 
+TELEGRAM_CHAT_ID | Your private telegram user chat ID
 
 The user for logging in to the Kibana GUI: elastic
+
+## Telegram bot
+If you connect the freqtrade-buhtik bot to a telegram bot, it makes it easier to query infromation from the freqtrade-buhtik bot. For more informatio:
+https://www.freqtrade.io/en/latest/telegram-usage/
 
 ## Default configuration
 These are the default configurations I put for the trading freqtrade bot, you can change it on the config.json:
@@ -68,11 +74,15 @@ The coins pairs that are allowed to be trade by freqtrade are:
 
 
 ## How to run the freqtrade-buhtik
-Firstly, build the docker images locally by:
+Firstly set your credentials file (.env) with the required credentials mentioned above. After you set up the file, load the value to environment variables by the command:
+```
+source .env
+```
+Secondly, build the docker images locally by:
 ```
 docker-compose build
 ```
-Secondly, run the docker-compose:
+Thirdly, run the docker-compose:
 ```
 docker-compose up
 ```
