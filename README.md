@@ -15,8 +15,7 @@ We've added:
 
 ## Data
 The data collected from the freqtrade API and delivered to Elasticsearch & Kibana includes:
-* Current BTC in account
-* Current value in dollars
+* Current value in USD
 * Current best pair of trading
 * Average duration for trades
 * Latest trade done (date)
