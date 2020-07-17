@@ -42,34 +42,32 @@ https://www.freqtrade.io/en/latest/telegram-usage/
 
 ## Default configuration
 These are the default configurations I put for the trading freqtrade bot, you can change it on the config.json:
-* stake_currency: BTC
+* stake_currency: USDT
 * stake_amount: unlimited
 * tradable_balance_ratio: 1
 
 ## Coins trade list
 The coins pairs that are allowed to be trade by freqtrade are:
-* EOS/BTC
-* ETH/BTC
-* LINK/BTC
-* NEO/BTC
-* XRP/BTC
-* XTZ/BTC
-* MATIC/BTC
-* VET/BTC
-* ADA/BTC
-* BAND/BTC
-* DOGE/BTC
-* XLM/BTC
-* ATOM/BTC
-* LEND/BTC
-* ERD/BTC
-* ZIL/BTC
-* ONT/BTC
-* ANKR/BTC
-* SOL/BTC
-* COMP/BTC
-* STORJ/BTC
-* KAVA/BTC
+* EOS/USDT
+* ETH/USDT
+* LINK/USDT
+* NEO/USDT
+* XRP/USDT
+* XTZ/USDT
+* MATIC/USDT
+* VET/USDT
+* ADA/USDT
+* BAND/USDT
+* DOGE/USDT
+* XLM/USDT
+* ATOM/USDT
+* LEND/USDT
+* ERD/USDT
+* ZIL/USDT
+* ONT/USDT
+* ANKR/USDT
+* COMP/USDT
+* KAVA/USDT
 
 
 ## How to run the freqtrade-buhtik
