@@ -29,6 +29,8 @@ COPY config.json /tmp/
 RUN sed -i "s|BINANCE_API_KEY|${BINANCE_API_KEY}|g" /tmp/config.json
 RUN sed -i "s|BINANCE_API_SECRET_KEY|${BINANCE_API_SECRET_KEY}|g" /tmp/config.json
 RUN sed -i "s|FREQ_API_PWD|${FREQ_API_PWD}|g" /tmp/config.json
+RUN sed -i "s|TELEGRAM_TOKEN|${TELEGRAM_TOKEN}|g" /tmp/config.json
+RUN sed -i "s|TELEGRAM_CHAT_ID|${TELEGRAM_CHAT_ID}|g" /tmp/config.json
 ENTRYPOINT ["freqtrade"]
 # Default to trade mode
 CMD [ "trade" ]

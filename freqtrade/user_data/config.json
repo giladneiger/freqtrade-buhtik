@@ -94,9 +94,9 @@
         "remove_pumps": false
     },
     "telegram": {
-        "enabled": false,
-        "token": "",
-        "chat_id": ""
+        "enabled": true,
+        "token": "TELEGRAM_TOKEN",
+        "chat_id": "TELEGRAM_CHAT_ID"
     },
     "initial_state": "running",
     "forcebuy_enable": false,

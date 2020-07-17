@@ -30,6 +30,8 @@ In order to allow full control for the bot & the ELK (Elasticsearch, Logstash, K
 * BINANCE_API_SECRET_KEY
 * FREQ_API_PWD
 * ELASTIC_PASSWORD
+* TELEGRAM_TOKEN
+* TELEGRAM_CHAT_ID
 
 The user for logging in to the Kibana GUI: elastic
 
