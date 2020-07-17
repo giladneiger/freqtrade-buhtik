@@ -2,6 +2,8 @@ FROM python:3.8.3-slim-buster
 ARG BINANCE_API_KEY
 ARG BINANCE_API_SECRET_KEY
 ARG FREQ_API_PWD
+ARG TELEGRAM_TOKEN
+ARG TELEGRAM_CHAT_ID
 RUN apt-get update \
     && apt-get -y install curl build-essential libssl-dev \
     && apt-get clean \
