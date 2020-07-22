@@ -22,59 +22,12 @@ services:
       --logfile /freqtrade/user_data/logs/freqtrade.log
       --db-url sqlite:////freqtrade/user_data/tradesv3.sqlite
       --config /tmp/config.json
-      --strategy BbandRsi 
+      --strategy CombinedBinHAndCluc 
     healthcheck:
       test: "${DOCKER_HEALTHCHECK_TEST:-curl localhost:8080/api/v1/ping}"
       interval: 30s
       timeout: 10s
       retries: 5
-    networks:
-      - freqtrade_net
-  data_handler:
-    build: 
-      context: data_handler
-      args:
-        FREQ_API_PWD: ${FREQ_API_PWD}
-    network_mode: host
-    restart: always
-  logstash:
-    build: 
-      context: logstash
-      args:
-        ELASTIC_PASSWORD: ${ELASTIC_PASSWORD}
-    ports:
-      - "5044:5044"
-      - "9600:9600"
-    environment:
-      xpack.monitoring.enabled: "true"
-      xpack.monitoring.collection.enabled: "true"
-      xpack.security.enabled: "true"
-      xpack.monitoring.elasticsearch.username: "logstash_system"
-      xpack.monitoring.elasticsearch.password: ${ELASTIC_PASSWORD}
-    networks:
-      - freqtrade_net
-  kibana:
-    image: kibana:7.6.2
-    ports:
-      - "5601:5601"
-    environment:
-      SERVER_NAME: localhost
-      ELASTICSEARCH_URL: http://localhost:9200/
-      XPACK_MONITORING_COLLECTION_ENABLED: "true"
-      ELASTICSEARCH_USERNAME: "elastic"
-      ELASTICSEARCH_PASSWORD: ${ELASTIC_PASSWORD}
-    networks:
-      - freqtrade_net
-  elasticsearch:
-    image: elasticsearch:7.6.2
-    ports:
-      - "9200:9200"
-      - "9300:9300"
-    environment:
-      discovery.type: single-node
-      xpack.security.enabled: "true"
-      ELASTIC_PASSWORD: ${ELASTIC_PASSWORD}
-      xpack.license.self_generated.type: "trial"
     networks:
       - freqtrade_net
 networks:
