@@ -102,12 +102,5 @@
     "forcebuy_enable": false,
     "internals": {
         "process_throttle_secs": 5
-    },
-    "api_server": {
-        "enabled": true,
-        "listen_ip_address": "0.0.0.0",
-        "listen_port": 8080,
-        "username": "gilad-freqtrader",
-        "password": "FREQ_API_PWD"
     }
 }
