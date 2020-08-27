@@ -58,8 +58,14 @@
             "ZIL/USDT",
             "ONT/USDT",
             "ANKR/USDT",
-            "COMP/USDT",
-            "KAVA/USDT"
+            "KAVA/USDT",
+            "ADAUP/USDT",
+            "ETHUP/USDT",
+            "LINKUP/USDT",
+            "BTCUP/USDT",
+            "BCH/USDT",
+            "LTC/USDT",
+            "DOT/USDT"
         ],
         "pair_blacklist": [
             "BNB/BTC",
